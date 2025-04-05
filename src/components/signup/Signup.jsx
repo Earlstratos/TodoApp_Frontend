@@ -28,7 +28,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "https://todo-app-backend-6yzf1xwq0-satyams-projects-4e045015.vercel.app/api/v1/register",
+        "https://todo-app-backend-xi.vercel.app/api/v1/register",
         Inputs,
         {
           headers: {

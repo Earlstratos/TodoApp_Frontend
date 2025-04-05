@@ -71,7 +71,7 @@ const Todo = () => {
     } else {
       if (id) {
         try {
-          await axios.post("https://todo-app-backend-6yzf1xwq0-satyams-projects-4e045015.vercel.app/api/v2/addTask", {
+          await axios.post("https://todo-app-backend-xi.vercel.app/api/v2/addTask", {
             title: inputs.title,
             body: inputs.body,
             dueDate: dueDate, // Send due date
@@ -96,7 +96,7 @@ const Todo = () => {
     console.log("Fetching tasks with ID:", id); // Log the ID being used
     if (id) {
       try {
-        const response = await axios.get(`https://todo-app-backend-6yzf1xwq0-satyams-projects-4e045015.vercel.app/v2/getTask/${id}`);
+        const response = await axios.get(`https://todo-app-backend-xi.vercel.app/v2/getTask/${id}`);
         console.log("API Response:", response.data); // Log the response data
 
         const tasksWithNotification = (response.data.list || []).map(task => ({
@@ -118,7 +118,7 @@ const Todo = () => {
   const del = async (Cardid) => {
     if (id) {
       try {
-        await axios.delete(`https://todo-app-backend-6yzf1xwq0-satyams-projects-4e045015.vercel.app/v2/deleteTask/${Cardid}`, {
+        await axios.delete(`https://todo-app-backend-xi.vercel.app/v2/deleteTask/${Cardid}`, {
           data: { id: id },
         });
         toast.success("Task Deleted Successfully");
