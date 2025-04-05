@@ -1,0 +1,13 @@
+# dependencies
+node_modules
+
+# build output
+dist
+
+# environment variables
+.env
+
+# system / IDE / deployment files
+.DS_Store
+.vscode
+.vercel
