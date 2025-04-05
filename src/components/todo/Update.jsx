@@ -21,7 +21,7 @@ const Update = ({ display, update }) => {
   const submit = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/v2/updateTask/${update._id}`,
+        `https://todo-app-backend-xi.vercel.app/api/v2/updateTask/${update._id}`,
         Inputs
       );
       toast.success(response.data.message);
