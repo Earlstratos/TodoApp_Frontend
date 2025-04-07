@@ -60,7 +60,7 @@ const Navbar = () => {
               </li>
               {!isLoggedIn && (
                 <>
-                  <div className="d-flex ">
+                  <div className="d-flex mb-2">
                     <li className="nav-item mx-2">
                       <Link
                         className="nav-link active  btn-nav p-2"
