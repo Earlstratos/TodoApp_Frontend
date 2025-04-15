@@ -9,6 +9,7 @@ import Todo from "./components/todo/Todo";
 import { useDispatch } from "react-redux";
 import { authActions } from "./store";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div>
+      <Analytics/>
       <Router>
         <Navbar />
         <Routes>
