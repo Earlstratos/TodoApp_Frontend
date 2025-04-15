@@ -22,7 +22,6 @@ function App() {
 
   return (
     <div>
-      <Analytics />
       <Router>
         <Navbar />
         <Routes>
