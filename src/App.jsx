@@ -9,7 +9,6 @@ import Todo from "./components/todo/Todo";
 import { useDispatch } from "react-redux";
 import { authActions } from "./store";
 import { useEffect } from "react";
-import { Analytics } from '@vercel/analytics/next';
 
 function App() {
   const dispatch = useDispatch();
